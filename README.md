@@ -7,8 +7,10 @@ What happens when you cross a banana with an orange?
     - [x] Virtual environment
     - [x] Handling Dependencies
 - [x] Collect data
-- [ ] Discover and visualize the data to gain insights
+- [x] Discover and visualize the data to gain insights
 - [ ] Prepare data for ML Algos
+  - [ ] Create Test Set
+  - [ ] Create Training Set
 - [ ] Select a model and train it
 - [ ] Fine-tune the model
 - [ ] Present solution
