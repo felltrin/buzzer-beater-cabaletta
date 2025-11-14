@@ -18,8 +18,8 @@ def load_season_stats_data(housing_path=HOUSING_PATH):
 
 
 def main():
-    print("Hello world!")
     fetch_nba_data()
+    seasons_stats = load_season_stats_data()
 
 
 if __name__ == '__main__':
