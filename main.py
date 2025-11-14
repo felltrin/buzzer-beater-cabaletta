@@ -1,16 +1,29 @@
-# This is a sample Python script.
+import os
+import pandas as pd
+import tarfile
+from six.moves import urllib
+import kaggle
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+kaggle.api.authenticate()
+DOWNLOAD_ROOT = "drgilermo/nba-players-stats"
+HOUSING_PATH = "datasets/nba"
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def fetch_nba_data(housing_url=DOWNLOAD_ROOT, housing_path=HOUSING_PATH):
+    if not os.path.isdir(housing_path):
+        kaggle.api.dataset_download_files(housing_url, path=housing_path, unzip=True)
 
 
-# Press the green button in the gutter to run the script.
+def load_season_stats_data(housing_path=HOUSING_PATH):
+    csv_path = os.path.join(housing_path, "Seasons_Stats.csv")
+    return pd.read_csv(csv_path)
+
+
+def main():
+    print("Hello world!")
+    fetch_nba_data()
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    main()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
