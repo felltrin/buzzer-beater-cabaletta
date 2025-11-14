@@ -1,6 +1,7 @@
 import os
 import pandas as pd
 import kaggle
+import matplotlib.pyplot as plt
 
 kaggle.api.authenticate()
 DOWNLOAD_ROOT = "drgilermo/nba-players-stats"
@@ -20,6 +21,10 @@ def load_season_stats_data(housing_path=HOUSING_PATH):
 def main():
     fetch_nba_data()
     seasons_stats = load_season_stats_data()
+    # seasons_stats_head = seasons_stats.head()
+    print("obama")
+    seasons_stats.hist(bins=50, figsize=(20, 15))
+    plt.show()
 
 
 if __name__ == '__main__':
