@@ -5,10 +5,12 @@ What happens when you cross a banana with an orange?
 - [x] Come up with big picture (question)
   - [x] Basic setup
     - [x] Virtual environment
-    - [ ] Handling Dependencies
-- [ ] Collect data
-- [ ] Discover and visualize the data to gain insights
+    - [x] Handling Dependencies
+- [x] Collect data
+- [x] Discover and visualize the data to gain insights
 - [ ] Prepare data for ML Algos
+  - [ ] Create Test Set
+  - [ ] Create Training Set
 - [ ] Select a model and train it
 - [ ] Fine-tune the model
 - [ ] Present solution
@@ -21,3 +23,4 @@ What happens when you cross a banana with an orange?
 - https://basketnews.com/news-213162-espn-nba-top-100-rank-jokic-doncic-giannis-take-first-three-spots.html
 - https://www.kaggle.com/datasets/eduardopalmieri/nba-player-stats-season-2425
 - https://www.kaggle.com/datasets/drgilermo/nba-players-stats?select=Seasons_Stats.csv
+- https://www.youtube.com/watch?v=hzcV0hDkfzs
